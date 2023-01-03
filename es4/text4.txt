@@ -1,0 +1,3 @@
+SELECT *
+ FROM `courses`
+  WHERE `period` LIKE 'I semestre' AND `year` LIKE 1;
