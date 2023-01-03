@@ -1,0 +1,3 @@
+SELECT *
+ FROM `students`
+  WHERE 2022 - YEAR(`date_of_birth`) = 30;
