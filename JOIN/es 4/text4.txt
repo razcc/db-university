@@ -1,0 +1,7 @@
+SELECT students.name as 'nome', students.surname as 'cognome', degrees.name as 'degree name', departments.name as 'dipartimento nome'
+FROM `students`  
+JOIN degrees
+ON degrees.id = students.degree_id
+JOIN departments
+ON departments.id = degrees.department_id
+ORDER BY `students`.`surname` ASC;
