@@ -1,0 +1,5 @@
+SELECT *
+FROM `degrees`
+JOIN departments
+ON degrees.department_id = departments.id
+WHERE degrees.level = 'magistrale' AND departments.name = 'Dipartimento di Neuroscienze';
