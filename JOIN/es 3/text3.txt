@@ -1,0 +1,5 @@
+SELECT * 
+FROM `course_teacher`
+JOIN courses
+ON course_teacher.course_id = courses.id
+WHERE course_teacher.teacher_id = 44;
