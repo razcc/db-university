@@ -1,0 +1,3 @@
+SELECT office_address as 'indirizzo edificio', COUNT(office_address) as 'numero insegnanti nello stesso edificio'
+FROM teachers
+GROUP BY office_address;
