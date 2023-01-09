@@ -1,0 +1,3 @@
+SELECT exam_id AS 'id esame', AVG(vote) AS 'media'
+FROM `exam_student`  
+GROUP by exam_id;
