@@ -1,0 +1,11 @@
+SELECT degrees.name as 'degree name', courses.name as 'nome corso', courses.id as 'id corso', course_teacher.teacher_id as 'id teacher', teachers.name as 'teacher name', teachers.surname as 'teacher surname'
+
+FROM `degrees`
+JOIN courses
+ON degrees.id = courses.degree_id
+
+JOIN course_teacher
+ON courses.id = course_teacher.course_id
+
+JOIN teachers
+ON course_teacher.teacher_id = teachers.id;
